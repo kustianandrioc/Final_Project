@@ -1,6 +1,6 @@
 
 import streamlit as st                  
-
+from google import genai
 
 st.title("Chatbot Umum")
 st.caption("ChatBot Umum")
@@ -35,7 +35,7 @@ if ("genai_client" not in st.session_state) or (
 if "chat" not in st.session_state:
 
     st.session_state.chat = st.session_state.genai_client.chats.create(
-        model="gemini-3.5-flash"
+        model="gemini-2.5-flash"
     )
 
 if "messages" not in st.session_state:
