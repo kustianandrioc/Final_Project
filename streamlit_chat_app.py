@@ -1,6 +1,5 @@
 
-import streamlit as st          
-from google import genai         
+import streamlit as st                  
 
 st.title("Chatbot Umum")
 st.caption("ChatBot Umum")
